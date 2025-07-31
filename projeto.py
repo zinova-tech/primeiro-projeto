@@ -34,7 +34,6 @@ while True:
         while opc2 <= 0 or opc2 > len(despor):
             print(f'{opc2} Está fora da lista, por favor digite uma opção válida!')
             opc2 = intperson('Sua opção: ')
-
         if opc2 in despor:
             cabeçalho(despor[opc2])   
             if opc2 == 1:
@@ -45,7 +44,6 @@ while True:
                         futebol['Nome'] = str(input('Nome: '))
                 futebol['Idade'] = intperson('Idade: ')
                 futebol['Desporto'] = despor[opc2]
-                cabeçalho('CADASTRADO COM ÊXITO!')
                 dados.append(futebol.copy())
             elif opc2 == 2:
                 bascket['Nome'] = str(input('Nome: '))
@@ -62,6 +60,8 @@ while True:
                 tenis['Idade'] = intperson('Idade: ')
                 tenis['Desporto'] = despor[opc2]
                 dados.append(tenis.copy())
+            cabeçalho('CADASTRADO COM ÊXITO!')
+            
     if opc1 == 2:
         system('clear')
         cabeçalho('PESSOAS CADASTRADAS')
@@ -80,6 +80,7 @@ while True:
         if not a:
             print('Nenhuma pessoas cadastrada.')
         sleep(2)
+        
     if opc1 == 3:
         cabeçalho(intro[opc1])
         varrerdic(despor)
