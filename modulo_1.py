@@ -25,6 +25,7 @@ def intperson(var):
         else:
             return a
 
+
 def criarArquivo(var):
     try:
         a = open(var, 'w+')
